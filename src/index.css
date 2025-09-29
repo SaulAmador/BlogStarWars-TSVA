@@ -1,0 +1,62 @@
+body {
+    background: transparent;
+    font-family: 'Orbitron', Arial, sans-serif;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@keyframes moveStars {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 10000px;
+    }
+}
+/* Estilos para la página de favoritos */
+.favorites-page {
+    padding: 2rem 0;
+}
+
+.favorite-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s;
+}
+
+.favorite-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.favorite-actions a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.favorite-actions a:hover {
+    text-decoration: underline;
+}
+
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #bb2d3b;
+}
