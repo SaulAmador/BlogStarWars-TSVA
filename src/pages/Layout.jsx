@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom/dist"
 import ScrollToTop from "../components/ScrollToTop"
+<<<<<<< HEAD
 import starfield from "../assets/bg/starfield.webm"
 
 export const Layout = () => {
@@ -32,3 +33,18 @@ export const Layout = () => {
         </>
     );
 };
+=======
+import { Navbar } from "../components/Navbar"
+import { Footer } from "../components/Footer"
+
+// Base component that maintains the navbar and footer throughout the page and the scroll to top functionality.
+export const Layout = () => {
+    return (
+        <ScrollToTop>
+            <Navbar />
+                <Outlet />
+            <Footer />
+        </ScrollToTop>
+    )
+}
+>>>>>>> 79bab98201105d32cd7247f5b4b06eb489c47a8d
